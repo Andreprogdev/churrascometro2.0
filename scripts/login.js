@@ -26,7 +26,7 @@ function login(){
     signInWithEmailAndPassword(auth, email, senha)
         .then(()=>{
             alert('Bem vindo!')
-            window.location.href = "../paginas/pag01.html";
+            window.open("../paginas/pag01.html");
         }).catch(() =>{
             alert('Email ou senha inválida!')
         })
@@ -46,7 +46,7 @@ function criarNovaConta(){
     createUserWithEmailAndPassword(auth, newEmail, newSenha)
         .then(()=>{
             alert("Cadastro realizado com sucesso!")
-            window.location.href = "../index.html";
+            window.open("../index.html");
     })  .catch(()=>{
             alert("Por favor, complete os campos com informações válidas!")
     })
