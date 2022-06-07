@@ -1,0 +1,214 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+#fachada{
+    width: 100vw;
+    background-image: linear-gradient(180deg, #f19583 0, #e68379 25%, #d86c6c 50%, #c95561 75%, #bd425b 100%);  
+}
+
+#churrascometro{
+    width: 8vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#corpo{
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    left: 0px;
+    right: 0px;
+}
+
+#titulo{
+    font-size: 5vw;
+    color: #f19583;
+    margin-bottom: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+#subTitulo{
+    margin-top: 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 2vw;
+    color: black;
+}
+
+#tituloPessoas, #tituloDuracao, #tituloCarnes, #tituloBebidas{
+    margin-top: 5%;
+    color: #bd425b;
+    font-size: 2vw; 
+}
+
+.generos{
+    margin-top: 0px;
+}
+
+
+#boxPessoas, #boxDuracao, #boxCarnes, #boxBebidas{
+    border: 2px solid black;
+    border-radius: 10px;
+    border-top: 20px solid rgb(142, 142, 142);
+    display: inline-block;
+    width: 50vw;
+    background-color:rgba(255, 255, 0, 0.252);
+}
+
+#homens, #mulheres, #crianças{
+    display: inline-block;  
+    font-size:2vw;
+    margin-bottom: 5%;
+}   
+
+#homens, #mulheres{
+    margin-right: 20%;
+}
+
+.inputsPessoas{
+    width: 5vw;
+    height: 6vh;
+    border-radius: 10%;
+    font-size: 2vw;
+    background-image: linear-gradient(180deg, #f19583 0, #e68379 25%, #d86c6c 50%, #c95561 75%, #bd425b 100%);  
+    color: white;
+    text-align: center;
+}
+
+.inputsPessoas::placeholder{
+    color: white;
+    text-align: center;
+}
+
+#subtituloTempo, #opcoes{
+    display: inline-block;
+}
+
+#subtituloTempo{
+    margin-right:20vw;
+    font-size: 1.2vw;
+}
+
+#opcoes{
+    width: 10vw;
+    font-size: 1vw;
+    background-image: linear-gradient(180deg, #f19583 0, #e68379 25%, #d86c6c 50%, #c95561 75%, #bd425b 100%);  
+    color: white;
+}
+
+#opcoes:hover{
+    background-color: #f37b64;
+}
+
+#Calcular{
+    display: block;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12vw;
+    height: 7vh;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    font-size: 1vw;
+    cursor: pointer;
+}
+#boi, #porco, #frango{
+    display: inline-block;  
+    font-size:3.5vw;
+    margin-bottom: 5%;
+}
+
+#boi, #porco{
+    margin-right: 20%;
+}
+
+#carneBovina, #carneSuina, #carneAviaria{
+width: 5vw;
+height: 5vh;
+}
+
+.animais{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1vw;
+}
+
+#Cervejas, #Refrigerantes{
+    display: inline-block;
+    margin-bottom: 7%;
+    font-size:2.0vw;
+}
+
+#Cervejas{
+    margin-right: 20%;
+}
+
+.opcoesBebidas{
+    margin-top: 0px;
+    font-size:3.5vw;
+}
+
+#subBrejas, #subRefris{
+    font-size: 1vw;
+}
+
+#opBrejas, #opRefris{
+    width: 10vw;
+    font-size: 1vw;
+}
+
+#quadroResumo{
+    display: none;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    left: 0px;
+    right: 0px;
+}
+
+table, td, th{
+    border: 2px solid black;
+    margin-left: 30%;
+    border-collapse: collapse;
+    width: 40vw;
+}
+
+th{
+    background-image: linear-gradient(180deg, #f19583 0, #e68379 25%, #d86c6c 50%, #c95561 75%, #bd425b 100%);  
+    color: white;
+}
+
+#resumoPreços{
+    width: 40vw;
+    border: 2px solid black;
+    margin-left: 30%;
+    text-align: center;
+    right: 0px;
+    left: 0px;
+
+}
+
+.titulosResumos{
+    font-size: 2vw;
+    margin-top: 5%;
+}
+
+#voltar{
+    width: 8vw;
+    font-size: 1vw;
+    border-radius: 5%;
+    margin-top: 5%;
+    background-image: linear-gradient(180deg, #f19583 0, #e68379 25%, #d86c6c 50%, #c95561 75%, #bd425b 100%);  
+    color: white;
+    cursor:pointer;
+}
+
+#voltarLogin{
+    position: absolute;
+    left: 0px;
+    font-size: 0.8vw;
+}

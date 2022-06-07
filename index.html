@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="global">
+        <div id="login">
+            <img src="../imagem/churrascometro.png" id="icon">
+            <input type="email" placeholder = "Digite seu email" class="inputs" id="inputEmail" >
+            <input type="password" placeholder ="Digite sua senha" class="inputs" id="inputSenha">
+            <button id="entrar">ENTRAR</button> 
+            <p id="criarConta">Não tem uma conta? crie aqui!</p>
+        </div>
+        <div id="Registro">  
+            <div id="cadastroNome">
+                <h3>Digite seu nome completo:</h3>
+                <input type="text" placeholder="Seu nome completo" id="nome">
+            </div>
+            <div  id="cadastroEmail">
+                <h3>Digite seu email:</h3>
+                <input type="email" placeholder="Seu email válido" id="email">
+            </div>
+            <div id="cadastroSenha">
+                <h3>Digite sua senha:</h3>
+                <input type="password" placeholder="Sua senha válida" id="senha">
+            </div>
+            <button id="registrar">registrar</button>
+            <a href="index.html" id="voltarLogin">Voltar para página de login</a>
+        </div>
+    </div>
+    <script src="./scripts/login.js" type="module"></script>
+</body>
+</html>

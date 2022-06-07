@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrascômetro</title>
+    <link rel="stylesheet" href="../styles/style01.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="fachada">
+        <img src="../imagem/churrascometro.png" id="churrascometro">
+    </div>
+    
+    <div id="corpo">
+        <a href="../index.html" id="voltarLogin"> VOLTAR PARA PÁGINA DE LOGIN</a>
+        <h1 id="titulo">CHURRASCÔMETRO</h1>
+        <h2 id="subTitulo">Compre a quantidade certa de carnes e bebidas para seu churrasco evitando percas!</h2>
+        <h1 id="tituloPessoas">QUANTIDADE DE PESSOAS</h1>
+        <div id="boxPessoas">
+            <div id="homens">
+                <spam>👨</spam>
+                <p class="generos">Homens</p>
+                <input type="number" min="0" class="inputsPessoas" placeholder="0" id="qtdHomens">
+            </div>
+            <div id="mulheres">
+                <spam>👩</spam>
+                <p class="generos">Mulheres</p>
+                <input type="number" min="0" class="inputsPessoas" placeholder="0" id="qtdMulheres">
+            </div>
+            <div id="crianças">
+                <spam>👶</spam>
+                <p class="generos">Crianças</p>
+                <input type="number" min="0" class="inputsPessoas" placeholder="0" id="qtdBebes">
+            </div>
+        </div>
+        <h1 id="tituloCarnes">OPÇÕES DE CARNES</h1>
+        <div id="boxCarnes">
+            <div id="boi">
+                <spam>🐂 </spam>
+                <p class="animais">Boi</p>
+                <input type="checkbox" id="carneBovina">
+            </div>
+            <div id="porco">
+                <spam>🐖</spam>
+                <p class="animais">Porco</p>
+                <input type="checkbox" id="carneSuina">
+            </div>
+            <div id="frango">
+                <spam>🐔</spam>
+                <p class="animais">Frango</p>
+                <input type="checkbox" id="carneAviaria">
+            </div>
+        </div>
+        <h1 id="tituloBebidas"> SELECIONE AS OPÇÕES DE BEBIDAS</h1>
+        <div id="boxBebidas">
+            <div id="Cervejas">
+                <spam class="opcoesBebidas">🍺</spam>
+                <p class="opcoesBebidas" id="subBrejas">Opções de brejas</p>
+                <select id="opBrejas" name="brejas">
+                    <option id="cervejaA+" value="A+">A+ (heineken, stella...) </option>
+                    <option id="cervejaB+" value="B+">B+ (amstel, budweiser... ) </option>
+                    <option id="cervejaC+" value="C+">C+ (brahma, bohemia...)</option>
+                </select>
+            </div>
+            <div id="Refrigerantes">
+                <spam class="opcoesBebidas">🥤</spam>
+                <p class="opcoesBebidas" id="subRefris">Opções de refris</p>
+                <select id="opRefris" name="refris">
+                    <option value="coca"> Coca-cola </option>
+                    <option value="fanta"> Fanta </option>
+                    <option value="guarana"> guarana</option>
+                </select>
+            </div>
+        </div>
+
+        <h1 id="tituloDuracao">DURAÇÃO</h1>
+        <div id="boxDuracao">
+            <p id="subtituloTempo">Qual tempo de duração do churrasco?</p>
+            <select id="opcoes" name="opcoes">
+                <option value="a">Menos de 3 horas</option>
+                <option value="b">Entre 3 e 5 horas</option>
+                <option value="c">Mais de 5 horas</option>
+            </select>
+        </div>
+
+        <button id="Calcular">🔥 CALCULAR</button>
+    </div>
+
+    <div id="quadroResumo">
+        <h1 class="titulosResumos">Resumo quantidades:</h1>
+        <table id="resumoCarne">
+            <tr>
+                <th>Categoria</th>
+                <th>quantidade</th>
+            </tr>
+            <tr>
+                <td>Carne bovina</td>
+                <td id="qtdCarnesBovinas">0g</td>
+            </tr>
+            <tr>
+                <td>Carne suína</td>
+                <td id="qtdCarnesSuinas">0g</td>
+            </tr>
+            <tr>
+                <td>Carne aviária</td>
+                <td id="qtdCarnesAviarias">0g</td>
+            </tr>
+            <tr>
+                <td>Cervejas</td>
+                <td id="cervejas">0 latas</td>
+            </tr>
+            <tr>
+                <td>Refrigerantes</td>
+                <td id="refrigerantes">0 ML</td>
+            </tr>
+        </table>
+        <h1 class="titulosResumos">expectativa financeira: </h1>
+        <table id="resumoPreços">
+            <tr>
+                <th>Categoria</th>
+                <th>quantidade</th>
+            </tr>
+            <tr>
+                <td>Gastos com carnes</td>
+                <td id="gastosCarnes">0 R$</td>
+            </tr>
+            <tr>
+                <td>Gastos com cervejas</td>
+                <td id="gastosCervejas">0 R$</td>
+            </tr>
+            <tr>
+                <td>Gastos com refri</td>
+                <td id="gastosRefri">0 R$</td>
+            </tr>
+        </table>
+    <button id="voltar">VOLTAR</button>
+    </div>
+    <script src="../scripts/script01.js"></script>
+</body>
+
+</html>
