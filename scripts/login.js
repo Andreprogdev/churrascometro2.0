@@ -1,6 +1,5 @@
 import { initializeApp  } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js";
-
 const firebaseConfig = {
     apiKey: "AIzaSyBLzWA3MoOFvSNuz5Vleu1G9OrT0wBpeh8",
     authDomain: "churrascometro-ba580.firebaseapp.com",
@@ -12,6 +11,7 @@ const firebaseConfig = {
   };
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+
 
 let entrar = document.getElementById("entrar");
 entrar.addEventListener("click", login);
@@ -30,7 +30,8 @@ function login(){
         }).catch(() =>{
             alert('Email ou senha inválida!')
         })
-}
+        return email, senha;
+    }
 
 function novaConta(){
     document.getElementById('Registro').style.display = "block";
@@ -51,7 +52,3 @@ function criarNovaConta(){
             alert("Por favor, complete os campos com informações válidas!")
     })
 }
-
-
-
-

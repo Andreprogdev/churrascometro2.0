@@ -49,31 +49,31 @@ function quadroCarnes(carnes){
     let aviaria = document.getElementById('carneAviaria');
     
     if(bovina.checked && suina.checked && aviaria.checked){
-        document.getElementById('qtdCarnesBovinas').innerHTML = `${qtdCarnes/3} gramas`;
-        document.getElementById('qtdCarnesSuinas').innerHTML = `${qtdCarnes/3} gramas`;
-        document.getElementById('qtdCarnesAviarias').innerHTML = `${qtdCarnes/3} gramas`;
-        document.getElementById('gastosCarnes').innerHTML = `${(qtdCarnes/3 * 0.04) + (qtdCarnes/3 * 0.02) +  (qtdCarnes/3 * 0.015)} R$`
+        document.getElementById('qtdCarnesBovinas').innerHTML = `${(qtdCarnes/3).toFixed(1)} gramas`;
+        document.getElementById('qtdCarnesSuinas').innerHTML = `${(qtdCarnes/3).toFixed(1)} gramas`;
+        document.getElementById('qtdCarnesAviarias').innerHTML = `${(qtdCarnes/3).toFixed(1)} gramas`;
+        document.getElementById('gastosCarnes').innerHTML = `${((qtdCarnes/3 * 0.04) + (qtdCarnes/3 * 0.02) +  (qtdCarnes/3 * 0.015)).toFixed(1)} R$`
     }else if(bovina.checked && suina.checked){
-        document.getElementById('qtdCarnesBovinas').innerHTML = `${qtdCarnes*2/3} gramas`;
-        document.getElementById('qtdCarnesSuinas').innerHTML = `${qtdCarnes/3} gramas`;
-        document.getElementById('gastosCarnes').innerHTML = `${(qtdCarnes*2/3 * 0.04)+ (qtdCarnes/3 * 0.02)} R$`
+        document.getElementById('qtdCarnesBovinas').innerHTML = `${(qtdCarnes*2/3).toFixed(1)} gramas`;
+        document.getElementById('qtdCarnesSuinas').innerHTML = `${(qtdCarnes/3).toFixed(1)} gramas`;
+        document.getElementById('gastosCarnes').innerHTML = `${((qtdCarnes*2/3 * 0.04)+ (qtdCarnes/3 * 0.02)).toFixed(1)} R$`
     }else if(bovina.checked && aviaria.checked){
-        document.getElementById('qtdCarnesBovinas').innerHTML = `${qtdCarnes*2/3} gramas`;
-        document.getElementById('qtdCarnesAviarias').innerHTML = `${qtdCarnes/3} gramas`;
-        document.getElementById('gastosCarnes').innerHTML = `${(qtdCarnes*2/3 * 0.04)+ (qtdCarnes/3 * 0.015)} R$`
+        document.getElementById('qtdCarnesBovinas').innerHTML = `${(qtdCarnes*2/3).toFixed(1)} gramas`;
+        document.getElementById('qtdCarnesAviarias').innerHTML = `${(qtdCarnes/3).toFixed(1)} gramas`;
+        document.getElementById('gastosCarnes').innerHTML = `${((qtdCarnes*2/3 * 0.04)+ (qtdCarnes/3 * 0.015)).toFixed(1)} R$`
     }else if(suina.checked && aviaria.checked){
-        document.getElementById('qtdCarnesAviarias').innerHTML = `${qtdCarnes/2} gramas`;
-        document.getElementById('qtdCarnesSuinas').innerHTML = `${qtdCarnes/2} gramas`;
-        document.getElementById('gastosCarnes').innerHTML = `${(qtdCarnes/2 * 0.02)+ (qtdCarnes/2 * 0.015)} R$`
+        document.getElementById('qtdCarnesAviarias').innerHTML = `${(qtdCarnes/2).toFixed(1)} gramas`;
+        document.getElementById('qtdCarnesSuinas').innerHTML = `${(qtdCarnes/2).toFixed(1)} gramas`;
+        document.getElementById('gastosCarnes').innerHTML = `${((qtdCarnes/2 * 0.02)+ (qtdCarnes/2 * 0.015)).toFixed(1)} R$`
     }else if(bovina.checked){
-        document.getElementById('qtdCarnesBovinas').innerHTML = `${qtdCarnes} gramas`;
-        document.getElementById('gastosCarnes').innerHTML = `${(qtdCarnes * 0.04)} R$`
+        document.getElementById('qtdCarnesBovinas').innerHTML = `${(qtdCarnes).toFixed(1)} gramas`;
+        document.getElementById('gastosCarnes').innerHTML = `${((qtdCarnes * 0.04).toFixed(1))} R$`
     }else if(suina.checked){
-        document.getElementById('qtdCarnesSuinas').innerHTML = `${qtdCarnes} gramas`;
-        document.getElementById('gastosCarnes').innerHTML = `${(qtdCarnes * 0.02)} R$`
+        document.getElementById('qtdCarnesSuinas').innerHTML = `${(qtdCarnes).toFixed(1)} gramas`;
+        document.getElementById('gastosCarnes').innerHTML = `${((qtdCarnes * 0.02)).toFixed(1)} R$`
     }else if(aviaria.checked){
-        document.getElementById('qtdCarnesAviarias').innerHTML = `${qtdCarnes} gramas`;
-        document.getElementById('gastosCarnes').innerHTML = `${(qtdCarnes * 0.015)} R$`
+        document.getElementById('qtdCarnesAviarias').innerHTML = `${(qtdCarnes).toFixed(1)} gramas`;
+        document.getElementById('gastosCarnes').innerHTML = `${((qtdCarnes * 0.015)).toFixed(1)} R$`
     }
 
 }
